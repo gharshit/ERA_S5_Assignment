@@ -51,10 +51,13 @@ The forward method defines the forward pass of the neural network, including the
 #### 3. **utils.py** 
 The file contains a Python script for training and evaluating a neural network model on the MNIST dataset using PyTorch. It includes functions for defining data transformations, setting up data loaders, implementing the training and evaluation process, and visualizing training metrics. Key functionalities include:
 
+<br>
 
 1. **Data Transformations**:
 
 The script provides functions to define data transformations for both training and test datasets. These transformations include random cropping, rotation, resizing, and normalization. These transformations are crucial for augmenting the dataset and preparing it for training a neural network.
+
+<br>
 
 2. **Data Loader Setup**:
 
