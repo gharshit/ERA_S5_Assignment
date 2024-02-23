@@ -15,32 +15,23 @@ For more information refer to this [link](https://en.wikipedia.org/wiki/MNIST_da
 
 This repo contains python code to train a convolutional neural network to classify images of handwritten digits (MNIST dataset). The neural net used contains 4 convolution layer followed by 2 fully connected layers as the underlying architecture. For the training, Stochastic Gradient Descent is used with loss fucntion as Negative Log Likelihood.  
 
-
 <br>
 <br>
 
+## Code Structure
 
-### Code Structure
-
-####  **S5.ipynb**
-Main driver code with the following flow:
-1. **Code Block 1**: Contains the necessary libraries and hyperparamters.
-
-2. **Code Block 2**: Checks the availability of GPU or else the processing happens on CPU.
-
-3. **Code Block 3**: Get MNIST dataset and pass it to the loader for the model to train/text on in batch manner.
-
-4. **Code Block 4**: Get sample dataset and display it.
-
-5. **Code Block 5**: Load to device and get summary of the model.
-
-6. **Code Block 6**: Setup optimizer, scheduler, loss function and call function to train the neural network on the dataset in batches.
-
-7. **Code Block 7**: Plot the train/test accurcy and loss values as epoch increases.
+####  1. **S5.ipynb**
+<br>**Code Block 1**: Contains the necessary libraries and hyperparamters.
+<br>**Code Block 2**: Checks the availability of GPU or else the processing happens on CPU.
+<br>**Code Block 3**: Get MNIST dataset and pass it to the loader for the model to train/text on in batch manner.
+<br>**Code Block 4**: Get sample dataset and display it.
+<br>**Code Block 5**: Load to device and get summary of the model.
+<br>**Code Block 6**: Setup optimizer, scheduler, loss function and call function to train the neural network on the dataset in batches.
+<br>**Code Block 7**: Plot the train/test accurcy and loss values as epoch increases.
 
 <br>
 
-#### **model.py** 
+#### 2. **model.py** 
 This file contains the definition of a convolutional neural network (CNN) implemented in PyTorch for image classification tasks. The neural network architecture, named Net, consists of four convolutional layers followed by two fully connected layers. The CNN is designed to take 1-channel images as input and output probabilities for 10 classes. Each convolutional layer is followed by rectified linear unit (ReLU) activation, and max-pooling is applied to reduce spatial dimensions.
 
 *Network Architecture:*<br>
@@ -55,9 +46,11 @@ FC2: Linear layer with 50 input features and 10 output features.<br>
 The forward method defines the forward pass of the neural network, including the application of activation functions (ReLU) and the log-softmax function for the output layer. The model is structured to be compatible with image data and is ready for training on image classification datasets.
 
 <br>
+<br>
 
-#### **utils.py** 
+#### 3. **utils.py** 
 The file contains a Python script for training and evaluating a neural network model on the MNIST dataset using PyTorch. It includes functions for defining data transformations, setting up data loaders, implementing the training and evaluation process, and visualizing training metrics. Key functionalities include:
+
 
 1. **Data Transformations**:
 
