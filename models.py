@@ -50,7 +50,7 @@ class Net(nn.Module):
 
 ##################################################################################
 
-#Net2 with same architecture as above with bias = False in every layer
+#Net2 with same architecture as above with bias = False in every layer (Currently not being used; justy for testing purpose incase)
 
 class Net2(nn.Module):
     #This defines the structure of the NN.
