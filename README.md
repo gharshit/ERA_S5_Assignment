@@ -53,40 +53,40 @@ The file contains a Python script for training and evaluating a neural network m
 
 <br>
 
-1. **Data Transformations**:
+- **Data Transformations**:
 
 The script provides functions to define data transformations for both training and test datasets. These transformations include random cropping, rotation, resizing, and normalization. These transformations are crucial for augmenting the dataset and preparing it for training a neural network.
 
 <br>
 
-2. **Data Loader Setup**:
+- **Data Loader Setup**:
 
 It includes a function to create data loaders for both the training and test datasets. These data loaders are essential for efficiently loading the data in batches during training and evaluation processes. The script ensures that the specified transformations are applied to the datasets during loading.
 
 
 <br>
 
-3. **Helper Functions**:
+- **Helper Functions**:
 The script contains several helper functions:<br>
 
-*GetCorrectPredCount*: Computes the number of correct predictions by comparing predicted labels against true labels.<br>
+    - *GetCorrectPredCount*: Computes the number of correct predictions by comparing predicted labels against true labels.<br>
 
-*train*: Performs the training process for each epoch, including forward and backward passes, optimization, and tracking of training metrics such as loss and accuracy.<br>
+    - *train*: Performs the training process for each epoch, including forward and backward passes, optimization, and tracking of training metrics such as loss and accuracy.<br>
 
-*test*: Evaluates the model on the test dataset, calculating test loss and accuracy without performing gradient updates.<br>
+    - *test*: Evaluates the model on the test dataset, calculating test loss and accuracy without performing gradient updates.<br>
 
-*get_optimizer*: Initializes the optimizer (Stochastic Gradient Descent) with specified learning rate and momentum.<br>
+    - *get_optimizer*: Initializes the optimizer (Stochastic Gradient Descent) with specified learning rate and momentum.<br>
 
-*get_scheduler*: Configures a learning rate scheduler that adjusts the learning rate during training.<br>
+    - *get_scheduler*: Configures a learning rate scheduler that adjusts the learning rate during training.<br>
 
-*get_loss*: Retrieves the specified loss function (negative log likelihood loss in this case).<br>
+    - *get_loss*: Retrieves the specified loss function (negative log likelihood loss in this case).<br>
 
 
 <br>
 
-4. **Visualization**:
+- **Visualization**:
 The script offers functions to visualize the dataset and training metrics:<br>
 
-*post_display*: Displays sample images from the training dataset along with their corresponding labels.<br>
+    - *post_display*: Displays sample images from the training dataset along with their corresponding labels.<br>
 
-*post_accuracyplots*: Plots the training and test losses, as well as training and test accuracies, providing insights into model performance over epochs.<br>
+    - *post_accuracyplots*: Plots the training and test losses, as well as training and test accuracies, providing insights into model performance over epochs.<br>
