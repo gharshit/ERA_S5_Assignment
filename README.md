@@ -31,6 +31,8 @@ This repo contains python code to train a convolutional neural network to classi
 
 <br>
 
+---
+
 #### 2. **model.py** 
 This file contains the definition of a convolutional neural network (CNN) implemented in PyTorch for image classification tasks. The neural network architecture, named Net, consists of four convolutional layers followed by two fully connected layers. The CNN is designed to take 1-channel images as input and output probabilities for 10 classes. Each convolutional layer is followed by rectified linear unit (ReLU) activation, and max-pooling is applied to reduce spatial dimensions.
 
@@ -43,7 +45,17 @@ Conv4: 256 filters with a 3x3 kernel, followed by max-pooling.<br>
 FC1: Linear layer with 4096 input features and 50 output features.<br>
 FC2: Linear layer with 50 input features and 10 output features.<br>
 
-The forward method defines the forward pass of the neural network, including the application of activation functions (ReLU) and the log-softmax function for the output layer. The model is structured to be compatible with image data and is ready for training on image classification datasets.
+<br>
+
+##### **Model Summary**
+
+![Summary](https://github.com/gharshit/ERA_S5_Assignment/assets/19635712/a3bcd62c-7391-497b-914e-0b05b05b6290)
+
+<br>
+
+The forward method defines the forward pass of the neural network, including the application of activation functions (ReLU) and the log-softmax function for the output layer.
+
+---
 
 <br>
 <br>
@@ -90,3 +102,12 @@ The script offers functions to visualize the dataset and training metrics:<br>
     - *post_display*: Displays sample images from the training dataset along with their corresponding labels.<br>
 
     - *post_accuracyplots*: Plots the training and test losses, as well as training and test accuracies, providing insights into model performance over epochs.<br>
+
+<br>
+
+---
+####  **Training Metrics** 
+
+![S5 Training Metrics](https://github.com/gharshit/ERA_S5_Assignment/assets/19635712/c55e0245-0f12-4841-b33d-36b7d39c8ad2)
+
+
