@@ -21,7 +21,8 @@ This repo contains python code to train a convolutional neural network to classi
 ---
 ##  **Training Metrics** 
 
-![S5 Training Metrics](https://github.com/gharshit/ERA_S5_Assignment/assets/19635712/c55e0245-0f12-4841-b33d-36b7d39c8ad2)
+![S5 Training Metrics](https://github.com/gharshit/ERA_S5_Assignment/assets/19635712/da38ad30-65e1-4cfc-b90d-0703da90fa20)
+
 
 
 ---
