@@ -13,7 +13,7 @@ For more information refer to this [link](https://en.wikipedia.org/wiki/MNIST_da
 
 #### Overall Context
 
-This repo contains python code to train a convolutional neural network to classify images of handwritten digits (MNIST dataset). The neural net used contains 4 convolution layer followed by 2 fully connected layers as the underlying architecture. For the training, Stochastic Gradient Descent is used with loss fucntion as Negative Log Likelihood.  
+This repo contains python code to train a convolutional neural network to classify images of handwritten digits (MNIST dataset). The neural net used contains 4 convolution layer followed by 2 fully connected layers as the underlying architecture. For the training, Stochastic Gradient Descent is used with loss function as Negative Log Likelihood.  
 
 <br>
 
